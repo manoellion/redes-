@@ -37,6 +37,13 @@
         h1,h2{
             text-transform: capitalize;
         }
+        a,a:visited{
+            color: black;
+        }
+        a:hover{
+            color: brown;
+        }
+       
     </style>
 </head>
 
