@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arquitetura TCP/IP</title>
+    <style>
+        body{
+            background-color: darkgray;
+            text-align: justify;
+            margin: 50px;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        th,table{
+            border-style: solid;
+            border-width: medium;
+            border-radius: 12px ;
+        }
+        img{
+            margin: auto;
+            display: block;
+        
+        }
+        a:visited {
+            color: ivory;
+        }
+        a:hover{
+            color: maroon;
+        }
+        a{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> arquitetura TCP/IP</h1>
+    <p>
+        O modelo de referência TCP/IP é mais simplificado que o modelo de referência
+        OSI, possuindo quatro camadas principais: aplicação, transporte, internet
+        e interface de rede.
+    </p>
+    <p>
+        A semelhança entre o modelo de referência OSI e o modelo TCP/IP está no
+        fato dos dois estarem baseados no conceito de pilha (contendo protocolos
+        independentes). Como características o modelo TCP/IP possui:
+    </p>
+    <ul>
+        <li>Quatro camadas – sendo as camadas de rede, transporte e aplicação,
+            comum tanto ao modelo de referência OSI, como ao modelo TCP/IP.</li>
+        <li>Adaptativo – sua criação baseou-se na adaptação para protocolos existentes, enquanto que o modelo de
+            referência OSI (criado antes dos protocolos) apresenta-se como mais genérico e flexível.</li>
+    </ul>
+    <img src="modelos.png" alt=" modelos de arquitetura">
+    <h2>camada de interface de rede</h2>
+    <p>
+        <mark>Esta camada tem como objetivo principal conectar um dispositivo de rede
+            (computador, notebook, etc.) a uma rede, utilizando para isso um protocolo. </mark>
+    </p>
+    <h2>camada de internet</h2>
+    <p>
+        Esta camada tem o objetivo de permitir aos dispositivos de rede enviar pacotes
+        e garantir que estes pacotes cheguem até seu destino. Cabe a camada de internet especificar o formato do pacote,
+        bem como, o protocolo utilizado,
+        neste caso o protocolo IP (Internet Protocol).
+        Semelhante a camada de rede do modelo de referência OSI, cabe a camada de
+        internet realizar a entrega dos pacotes IP no destino e realizar o roteamento
+        dos pacotes.
+    </p>
+    <h2>camada de transporte</h2>
+    <p>
+        <mark>A camada de transporte do modelo TCP/IP possui a mesma função da camada
+            de transporte do modelo de referência OSI, ou seja, garantir a comunicação
+            entre os dispositivos de origem e destino do pacote</mark> Fazem parte desta camada
+        dois protocolos bastante populares nas redes de computadores: o protocolo
+        TCP (Transmission Control Protocol) e o UDP (User Datagram Protocol).
+    </p>
+    <ul>
+        <li>Protocolo TCP – considerado um protocolo confiável (devido a quantidade de verificações, confirmações e
+            demais procedimentos realizados), o
+            protocolo TCP garante a entrega dos pacotes aos computadores presentes na rede. O fluxo dos pacotes de rede
+            passa desta camada (depois de
+            fragmentados) para a camada de internet (para onde são encaminhados).
+            No computador destino é feita a verificação e montagem de cada um dos
+            pacotes, para então ser efetivado o recebimento dos mesmos</li>
+        <li>Protocolo UDP – protocolo sem confirmação (UDP) é comumente utilizado na transferência de dados, porém, não
+            realiza nenhuma operação de
+            confirmação e verificação de pacotes na estação destino (procedimento
+            realizado pela própria aplicação). Apesar de ser classificado como um
+            protocolo não-confiável, o UDP é mais rápido que o TCP (justamente por
+            ter um mecanismo de funcionamento mais simplificado), sendo utilizado
+            em requisições que não necessitam de confirmação, como é o caso de
+            consultas DNS.</li>
+    </ul>
+    <h2> camada de aplicação</h2>
+    <p>
+        Esta camada tem por objetivo realizar a comunicação entre os aplicativos e os
+        protocolos de transporte, responsáveis por dar encaminhamento a estes pacotes.
+        Os protocolos da camada de transporte são usualmente conhecidos e desempenham diferentes funções, conforme
+        exemplos a seguir:
+    </p>
+    <table>
+        <tr>
+            <th>Protocolo SMTP – responsável pela comunicação junto ao servidor de
+                e-mails, para entrega destes, ao programa cliente que recebe as mensagens.
+            </th>
+        </tr>
+        <th>
+            Protocolo HTTP – acionado cada vez que um usuário abre um browser
+            (navegador) e digita um endereço de um site da internet.
+        </th>
+        <tr>
+            <th>
+                Protocolo FTP – utilizado cada vez que um usuário acessa um endereço
+                de FTP, para fazer download ou upload de arquivos (KUROSE, 2010)
+            </th>
+        </tr>
+
+    </table>
+    <a href="redes.html">rede</a>
+    <a href="topologia.html">topologia</a>
+    <a href="modelos_de_redes.html">modelos de redes</a>
+</body>
+
+</html>
