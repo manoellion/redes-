@@ -7,22 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>redes</title>
     <style>
-        body{
+        body {
             background-color: rgba(117, 117, 117, 0.689);
             text-align: justify;
             margin: 4%;
             font-size: 18px;
-            }
-        h1,h2{
+        }
+
+        h1,
+        h2 {
             text-transform: capitalize;
         }
+
         a:visited {
             color: ivory;
         }
-        a:hover{
+
+        a:hover {
             color: maroon;
         }
-        a{
+
+        a {
             cursor: pointer;
         }
     </style>
@@ -97,7 +102,7 @@
         ppp, ethernet
         Física: bits “nos fios dos canais
     </p>
-     <p>
+    <p>
         Uma série de outras nomenclaturas são utilizadas para descrever outros tipos
         de redes, quanto a extensão geográfica que as mesmas atuam. A seguir é
         possível conhecer algumas:
@@ -111,8 +116,9 @@
         CAN – uma CAN (Campus Area Network) corresponde a uma rede de
         computadores formada por computadores dispostos em edifícios, prédios,
         campus, entre outros (MENDES, 2007).
-     </p>
-     <a href="topologia.html">topologia de redes de computadores</a>
+    </p>
+    <a href="topologia.html">topologia de redes de computadores</a>
+    <a href="IP.html">TCP/IP</a>
 </body>
 
 </html>
